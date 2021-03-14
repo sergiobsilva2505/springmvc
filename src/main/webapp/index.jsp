@@ -9,12 +9,6 @@
 	<title>Estacionamento</title>
 </h:head>
 <h:body>
-	<center>
 		<h2>Spring MVC</h2>
-		<h4>
-			<a href="/hello/controller.html">Hello</a> <br /> 
-			<a href="/contact.html">Contacts</a>
-		</h4>
-	</center>
 </h:body>
 </html>
