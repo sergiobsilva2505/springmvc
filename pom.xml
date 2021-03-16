@@ -101,11 +101,11 @@
 		<!-- <artifactId>hibernate-validator</artifactId> -->
 		<!-- <version>7.0.1.Final</version> -->
 		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.hibernate</groupId> -->
-		<!-- <artifactId>hibernate-entitymanager</artifactId> -->
-		<!-- <version>4.1.6.Final</version> -->
-		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.1.6.Final</version>
+		</dependency>
 		<!-- <dependency> -->
 		<!-- <groupId>org.springframework</groupId> -->
 		<!-- <artifactId>spring-beans</artifactId> -->
@@ -128,9 +128,10 @@
 			<version>5.4.29.Final</version>
 			<type>pom</type>
 		</dependency>
-		<!-- log4j/log4j-core necessário para o envio de todos os logs do tipo info sejam enviados  -->
+		<!-- log4j/log4j-core necessário para o envio de todos os logs do tipo 
+			info sejam enviados -->
 		<!-- para o console appender System.out -->
-		
+
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
