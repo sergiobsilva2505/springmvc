@@ -9,6 +9,8 @@
 	<title>Estacionamento</title>
 </h:head>
 <h:body>
+
+	<a href="veiculos"></a>
 	<h1>Spring MVC</h1>
 
 </h:body>
