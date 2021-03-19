@@ -21,8 +21,8 @@ public class JpaVeiculoDao implements VeiculoDao {
 	}
 
 	@Override
-	public void adiciona(Veiculo veiculo) {
-		manager.persist(veiculo);
+	public Veiculo adiciona(Veiculo veiculo) {
+		return manager.persist(veiculo);
 
 	}
 

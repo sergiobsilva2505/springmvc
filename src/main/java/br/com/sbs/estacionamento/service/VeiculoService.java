@@ -20,4 +20,9 @@ public class VeiculoService {
 		return lista;
 	}
 
+	public Veiculo adiciona(Veiculo veiculo) {
+		Veiculo obj = dao.adiciona(veiculo);
+		return obj;
+	}
+
 }

@@ -17,7 +17,7 @@ public class VeiculoController {
 
 	@Autowired
 	private VeiculoService veiculoService;
-	
+
 	@RequestMapping("novoVeiculo")
 	public String form() {
 		return "formVeiculo";
@@ -27,7 +27,7 @@ public class VeiculoController {
 	public ModelAndView lista() {
 		ModelAndView model = new ModelAndView("listaVeiculos");
 		List<Veiculo> veiculos = veiculoService.findAll();
-		model.addObject("veiculos",veiculos);
+		model.addObject("veiculos", veiculos);
 		return model;
 	}
 
@@ -36,4 +36,10 @@ public class VeiculoController {
 		return "index";
 	}
 
+	@RequestMapping("adicionaTarefa")
+	public String adicionaTarefa(Veiculo veiculo) {	
+
+		veiculoService.adiciona(veiculo);
+		return "tarefa/adicionada";
+	}
 }

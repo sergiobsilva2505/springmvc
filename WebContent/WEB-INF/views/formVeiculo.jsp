@@ -13,7 +13,22 @@
 <body>
 	<c:import url="head.jsp" />
 	<br>
-	<h2>Novo Veiculo</h2>
+	<h2>Adicionar Veiculo</h2>
+	<br>
+	<br>
+	<form action="adicionaTarefa" method="post">
+
+		<label for="descricao"> Descrição:</label> 
+		<input type="text"
+			name="descricao"></input><br /> 
+		<label for="nao">Finalizada:</label>
+		<input type="text" id="finalizada" name="finalizado" ><br /><!-- todo -->
+
+		<label for="dataFinalizacao">Data de finalização:</label> 
+		<input type="text" id="dataFinalizacao" name="dataFinalizacao"><br />
+
+		<input type="submit" value="Adicionar">
+	</form>
 
 </body>
 </html>
