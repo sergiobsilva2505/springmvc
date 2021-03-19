@@ -6,11 +6,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import br.com.sbs.estacionamento.entities.Veiculo;
 
 @Repository
-public class JpaVeiculoDao implements VeiculoDao {
+public class VeiculoDaoImpl implements VeiculoDao {
 
 	@PersistenceContext
 	private EntityManager manager;
@@ -20,9 +21,10 @@ public class JpaVeiculoDao implements VeiculoDao {
 		return manager.createQuery("select t from Veiculo t").getResultList();
 	}
 
+	@Transactional
 	@Override
-	public Veiculo adiciona(Veiculo veiculo) {
-		return manager.persist(veiculo);
+	public void adiciona(Veiculo veiculo) {
+		manager.persist(veiculo);
 
 	}
 

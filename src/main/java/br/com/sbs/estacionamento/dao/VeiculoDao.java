@@ -11,6 +11,6 @@ public interface VeiculoDao {
 
 	List<Veiculo> lista();
 
-	Veiculo adiciona(Veiculo veiculo);
+	void adiciona(Veiculo veiculo);
 
 }

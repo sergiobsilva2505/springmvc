@@ -15,20 +15,24 @@
 	<br>
 	<h2>Adicionar Veiculo</h2>
 	<br>
-	<br>
-	<form action="adicionaTarefa" method="post">
+	<fieldset>
+		<legend>Dados do veiculo:</legend>
+		<form action="adicionaVeiculo" method="post">
 
-		<label for="descricao"> Descrição:</label> 
-		<input type="text"
-			name="descricao"></input><br /> 
-		<label for="nao">Finalizada:</label>
-		<input type="text" id="finalizada" name="finalizado" ><br /><!-- todo -->
+			<label for="cor"> Cor:</label> <input type="text" name="cor"></input><br />
 
-		<label for="dataFinalizacao">Data de finalização:</label> 
-		<input type="text" id="dataFinalizacao" name="dataFinalizacao"><br />
+			<label for="marca">Marca:</label> <input type="text" id="marca"
+				name="marca"><br />
+			<!-- todo -->
 
-		<input type="submit" value="Adicionar">
-	</form>
+			<label for="modelo">Modelo:</label> <input type="text" id="modelo"
+				name="modelo"><br /> <label for="placa">Placa:</label> <input
+				type="text" id="placa" name="placa"><br /> <label
+				for="tipo">Tipo:</label> <input type="text" id="tipo" name="tipo"><br />
+
+			<input type="submit" value="Adicionar">
+		</form>
+	</fieldset>
 
 </body>
 </html>

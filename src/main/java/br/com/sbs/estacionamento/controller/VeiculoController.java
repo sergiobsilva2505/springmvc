@@ -36,10 +36,9 @@ public class VeiculoController {
 		return "index";
 	}
 
-	@RequestMapping("adicionaTarefa")
-	public String adicionaTarefa(Veiculo veiculo) {	
-
+	@RequestMapping("adicionaVeiculo")
+	public String adicionaVeiculo(Veiculo veiculo) {
 		veiculoService.adiciona(veiculo);
-		return "tarefa/adicionada";
+		return "adicionado";
 	}
 }
